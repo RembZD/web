@@ -1,7 +1,7 @@
 FROM jboss/wildfly:latest
 
 # Copia el archivo .war a WildFly
-COPY barberia.war /opt/jboss/wildfly/standalone/deployments/
+COPY barber.war /opt/jboss/wildfly/standalone/deployments/
 
 # Reemplaza el standalone.xml con tu configuración personalizada (con el DataSource)
 COPY standalone.xml /opt/jboss/wildfly/standalone/configuration/
